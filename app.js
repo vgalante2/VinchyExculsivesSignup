@@ -66,9 +66,6 @@ app.post("/failure", function(req, res){
 });
 
 
-app.listen(3000, function(req, res){
-  console.log("Youre the fuckin goat, Vin ");
-});
 
 //API KEY
 // f1c3e6e8185b7d1a55f3da7c228af703-us17
