@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.heading{
+  color: white;
+}
+
+.fooot{
+  color: white;
+}
+
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  width: 100%;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 1;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle{
+border-radius: 0;
+margin-bottom: -1px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn{
+  background-color: #AD7BE9;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #85CDFD;
+  color: black;
+}
+
+.fail {
+  position: relative;
+  left: 400px;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+}
+
+.failure {
+  background-color: black;
+  color: white;
+}
+
+.failure h1 p {
+  color: white;
+}
+
+.success{
+  background-color: black;
+color: white;
+position: relative;
+left: 810px;
+margin-left: 20px;
+}
+
+.success h1 {
+  color: #AD7BE9;
+}
+
+.success p {
+  color: #85CDFD;
+  position: absolute;
+  left: 2px;
+}
