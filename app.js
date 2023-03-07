@@ -70,6 +70,5 @@ app.listen(3000, function(req, res){
   console.log("Youre the fuckin goat, Vin ");
 });
 
-//API KEY
-// 5e88ec15338ceba7b4c68beedd54d538-us17
+
 // 22aad55be6
