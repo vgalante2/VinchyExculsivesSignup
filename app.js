@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const app = express();
 const https = require("https");
-const api_key = process.env.API_KEY;
 require("dotenv").config();
 
 app.use(express.static("public"));
@@ -40,7 +39,7 @@ app.post("/", function(req, res){
   const url = "https://us17.api.mailchimp.com/3.0/lists/22aad55be6";
   const options = {
     method: "POST",
-    auth: process.env.API_KEY
+    auth: "cenzo1:" + process.env.API_KEY
   }
 
  const request = https.request(url, options, function(response){
@@ -69,7 +68,7 @@ app.post("/failure", function(req, res){
 
 
 app.listen(process.env.PORT || 3000, function(){
-  console.log("Youre the f*ckin goat, Vin ");
+  console.log("Youre the goat, Vin ");
 });
 
 
