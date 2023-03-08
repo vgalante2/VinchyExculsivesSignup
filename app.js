@@ -60,10 +60,6 @@ request.end();
 
 app.post("/failure", function(req, res){
   res.redirect("/");
-
-  window.addEventListener("scroll", function() {
-    window.scrollTo(0, window.pageYOffset);
-});
 });
 
 
