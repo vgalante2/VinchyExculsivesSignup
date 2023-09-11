@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const app = express();
 const https = require("https");
+require("dotenv").config();
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -38,7 +39,7 @@ app.post("/", function(req, res){
   const url = "https://us17.api.mailchimp.com/3.0/lists/22aad55be6";
   const options = {
     method: "POST",
-    auth: "cenzo1:f1c3e6e8185b7d1a55f3da7c228af703-us17"
+    auth: "cenzo1:" + process.env.API_KEY
   }
 
  const request = https.request(url, options, function(response){
@@ -58,18 +59,13 @@ request.end();
 });
 
 app.post("/failure", function(req, res){
-  res.redirect("/");
-
-  window.addEventListener("scroll", function() {
-    window.scrollTo(0, window.pageYOffset);
-});
-});
+  res.redirect("/")});
 
 
-app.listen(3000, function(req, res){
+app.listen(process.env.PORT || 3000, function(){
   console.log("Youre the fuckin goat, Vin ");
 });
 
 //API KEY
-// f1c3e6e8185b7d1a55f3da7c228af703-us17
+// 4126957397ba78bb0add6e93955a5918-us17
 // 22aad55be6

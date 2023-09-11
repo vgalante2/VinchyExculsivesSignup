@@ -6,6 +6,7 @@ body {
 body {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: black;
@@ -20,6 +21,25 @@ body {
   color: white;
 }
 
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+.container p {
+  align-items: center;
+  justify-content: center;
+}
+
+.container .success {
+  width: 100%;
+  
+  
+}
 
 
 .form-signin {
@@ -80,9 +100,6 @@ margin-bottom: -1px;
 .success{
   background-color: black;
 color: white;
-position: relative;
-left: 810px;
-margin-left: 20px;
 }
 
 .success h1 {
@@ -91,6 +108,8 @@ margin-left: 20px;
 
 .success p {
   color: #85CDFD;
-  position: absolute;
-  left: 2px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
